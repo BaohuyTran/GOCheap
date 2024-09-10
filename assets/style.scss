@@ -9,6 +9,13 @@ $color-black: #000;
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Averta Light', sans-serif;
+  src: url('./fonts/AvertaStd-Light.otf');
+  font-weight: 250;
+  font-style: normal;
+}
+
 .plus-jakarta-sans {
   font-family: "Plus Jakarta Sans", sans-serif;
   font-optical-sizing: auto;
@@ -313,6 +320,10 @@ $color-black: #000;
       }
 
       #form {
+        p {
+          margin-bottom: 20px;
+        }
+
         .button-container {
           display: flex;
           justify-content: center;
@@ -329,6 +340,142 @@ $color-black: #000;
             .img-container {
               img {
                 max-width: 100%;
+              }
+            }
+          }
+        }
+      }
+
+      #typography {
+        #header {
+          .section-right {
+            padding-left: 70px;
+
+            section {
+              margin-bottom: 34px;
+              padding-bottom: 32px;
+              border-bottom: 1px solid $primary-color;
+              display: flex;
+              justify-content: flex-start;
+              align-items: center;
+              gap: 32px;
+
+              .right-title {
+                color: $primary-color;
+              }
+            }
+
+            .section-title {
+              div {
+                font-family: "Plus Jakarta Sans", sans-serif;
+                font-size: 40px;
+                font-weight: 700;
+              }
+            }
+
+            .section-regular {
+              font-family: "Plus Jakarta Sans", sans-serif;
+
+              .left {
+                font-weight: 400;
+                font-size: 48px;
+              }
+
+              .right {
+                font-weight: 400;
+              }
+            }
+
+            .section-medium {
+              font-family: "Plus Jakarta Sans", sans-serif;
+
+              .left {
+                font-weight: 500;
+                font-size: 48px;
+              }
+
+              .right {
+                font-weight: 500;
+              }
+            }
+
+            .section-bold {
+              font-family: "Plus Jakarta Sans", sans-serif;
+
+              .left {
+                font-weight: 700;
+                font-size: 48px;
+              }
+
+              .right {
+                font-weight: 700;
+              }
+            }
+          }
+        }
+
+        #text {
+          .section-right {
+            padding-left: 70px;
+
+            section {
+              margin-bottom: 34px;
+              padding-bottom: 32px;
+              border-bottom: 1px solid $primary-color;
+              display: flex;
+              justify-content: flex-start;
+              align-items: center;
+              gap: 32px;
+
+              .right-title {
+                color: $primary-color;
+              }
+            }
+
+            .section-title {
+              div {
+                font-family: "Lexend Deca", sans-serif;
+                font-size: 40px;
+                font-weight: 700;
+              }
+            }
+
+            .section-regular {
+              font-family: "Lexend Deca", sans-serif;
+
+              .left {
+                font-weight: 400;
+                font-size: 48px;
+              }
+
+              .right {
+                font-weight: 400;
+              }
+            }
+
+            .section-medium {
+              font-family: "Lexend Deca", sans-serif;
+
+              .left {
+                font-weight: 500;
+                font-size: 48px;
+              }
+
+              .right {
+                font-weight: 500;
+              }
+            }
+
+            .section-bold {
+              font-family: "Lexend Deca", sans-serif;
+
+              .left {
+                font-weight: 700;
+                font-size: 48px;
+              }
+
+              .right {
+                font-weight: 700;
               }
             }
           }
@@ -373,6 +520,41 @@ $color-black: #000;
       bottom: 20px;
       display: flex;
       justify-content: space-between;
+    }
+
+    footer {
+      background-color: #FFF9EB;
+      padding-top: 100px;
+      font-family: "Averta Light", sans-serif;
+      font-weight: 250;
+
+      .footer-container {
+        max-width: 1200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .footer-title {
+          font-size: 50px;
+          font-weight: 250;
+          text-align: center;
+        }
+
+        .footer-action {
+          text-align: center;
+
+          img {
+            margin: 5px 10px;
+          }
+        }
+
+        .footer-contact {
+          background-color: #131032;
+          padding: 50px 35px 25px 35px;
+          border-radius: 25px 25px 0 0;
+        }
+      }
     }
   }
 }

@@ -4,6 +4,12 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "Averta Light", sans-serif;
+  src: url("./fonts/AvertaStd-Light.otf");
+  font-weight: 250;
+  font-style: normal;
+}
 .plus-jakarta-sans {
   font-family: "Plus Jakarta Sans", sans-serif;
   font-optical-sizing: auto;
@@ -241,6 +247,9 @@
   background-color: #f5940c;
   border-radius: 0 16px 0 0;
 }
+* body .main #form p {
+  margin-bottom: 20px;
+}
 * body .main #form .button-container {
   display: flex;
   justify-content: center;
@@ -255,6 +264,106 @@
 }
 * body .main #form .section-right .imgage .img-container img {
   max-width: 100%;
+}
+* body .main #typography #header .section-right {
+  padding-left: 70px;
+}
+* body .main #typography #header .section-right section {
+  margin-bottom: 34px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid #f5940c;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 32px;
+}
+* body .main #typography #header .section-right section .right-title {
+  color: #f5940c;
+}
+* body .main #typography #header .section-right .section-title div {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+}
+* body .main #typography #header .section-right .section-regular {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+* body .main #typography #header .section-right .section-regular .left {
+  font-weight: 400;
+  font-size: 48px;
+}
+* body .main #typography #header .section-right .section-regular .right {
+  font-weight: 400;
+}
+* body .main #typography #header .section-right .section-medium {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+* body .main #typography #header .section-right .section-medium .left {
+  font-weight: 500;
+  font-size: 48px;
+}
+* body .main #typography #header .section-right .section-medium .right {
+  font-weight: 500;
+}
+* body .main #typography #header .section-right .section-bold {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+* body .main #typography #header .section-right .section-bold .left {
+  font-weight: 700;
+  font-size: 48px;
+}
+* body .main #typography #header .section-right .section-bold .right {
+  font-weight: 700;
+}
+* body .main #typography #text .section-right {
+  padding-left: 70px;
+}
+* body .main #typography #text .section-right section {
+  margin-bottom: 34px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid #f5940c;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 32px;
+}
+* body .main #typography #text .section-right section .right-title {
+  color: #f5940c;
+}
+* body .main #typography #text .section-right .section-title div {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+}
+* body .main #typography #text .section-right .section-regular {
+  font-family: "Lexend Deca", sans-serif;
+}
+* body .main #typography #text .section-right .section-regular .left {
+  font-weight: 400;
+  font-size: 48px;
+}
+* body .main #typography #text .section-right .section-regular .right {
+  font-weight: 400;
+}
+* body .main #typography #text .section-right .section-medium {
+  font-family: "Lexend Deca", sans-serif;
+}
+* body .main #typography #text .section-right .section-medium .left {
+  font-weight: 500;
+  font-size: 48px;
+}
+* body .main #typography #text .section-right .section-medium .right {
+  font-weight: 500;
+}
+* body .main #typography #text .section-right .section-bold {
+  font-family: "Lexend Deca", sans-serif;
+}
+* body .main #typography #text .section-right .section-bold .left {
+  font-weight: 700;
+  font-size: 48px;
+}
+* body .main #typography #text .section-right .section-bold .right {
+  font-weight: 700;
 }
 * body .service-book {
   position: fixed;
@@ -289,4 +398,33 @@
   bottom: 20px;
   display: flex;
   justify-content: space-between;
+}
+* body footer {
+  background-color: #FFF9EB;
+  padding-top: 100px;
+  font-family: "Averta Light", sans-serif;
+  font-weight: 250;
+}
+* body footer .footer-container {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+* body footer .footer-container .footer-title {
+  font-size: 50px;
+  font-weight: 250;
+  text-align: center;
+}
+* body footer .footer-container .footer-action {
+  text-align: center;
+}
+* body footer .footer-container .footer-action img {
+  margin: 5px 10px;
+}
+* body footer .footer-container .footer-contact {
+  background-color: #131032;
+  padding: 50px 35px 25px 35px;
+  border-radius: 25px 25px 0 0;
 }/*# sourceMappingURL=style.css.map */
