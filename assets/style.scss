@@ -1,0 +1,378 @@
+$primary-color: #f5940c;
+$color-white: #fff;
+$color-black: #000;
+
+@font-face {
+  font-family: 'Averta', sans-serif;
+  src: url('./fonts/AvertaStd-Regular.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.plus-jakarta-sans {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.lexend-deca-sans {
+  font-family: "Lexend Deca", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.btn-download {
+  border: 1px solid $color-black;
+  border-radius: 35px;
+  padding: 4px 12px;
+  font-weight: 700;
+  font-size: 16px;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+  background-color: transparent;
+
+  span {
+    padding: 0 4px;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  body {
+    background-color: #FFFCF9;
+    font-size: 16px;
+    font-family: "Averta", sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    text-rendering: optimizeSpeed;
+    scroll-behavior: smooth;
+
+    header {
+      height: 80px;
+      color: $color-white;
+      background-color: $primary-color;
+      width: 100%;
+      position: sticky;
+      z-index: 2;
+      display: flex;
+
+      nav {
+        margin: 0 auto;
+        padding: 0;
+        width: 1000px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        a {
+          text-decoration: none;
+          text-align: center;
+          color: $color-white;
+          padding: 28px;
+          font-size: 14px;
+          font-weight: 700;
+        }
+
+        .nav-menu {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+
+    .main {
+      margin: 0 20px;
+      font-family: "Lexend Deca", sans-serif;
+
+      .main-title {
+        font-size: 24px;
+        font-weight: 500;
+        padding: 20px 0;
+      }
+
+      .section-parent {
+        max-width: 1204px;
+        margin: 0 auto 80px;
+
+        .parent-title {
+          font-size: 24px;
+          font-weight: 700;
+        }
+
+        .section-children {
+          margin: 24px 0px;
+          display: flex;
+          justify-content: space-between;
+
+          .section-left {
+            width: 40%;
+
+            .children-title {
+              font-weight: 700;
+              font-size: 18px;
+              margin-bottom: 16px;
+            }
+
+            .children-description {
+              font-weight: 300px;
+              font-size: 16px;
+            }
+          }
+
+          .section-right {
+            width: 60%;
+          }
+        }
+      }
+
+      #logo {
+        .section-right {
+          padding-left: 70px;
+
+          .imgage {
+            text-align: center;
+
+            .img-container {
+              img {
+                max-width: 100%;
+              }
+            }
+
+            .description {
+              font-style: italic;
+              font-weight: 400;
+              font-size: 20px;
+              margin: 24px;
+            }
+
+            .button-container {
+              display: flex;
+              justify-content: center;
+              gap: 30px;
+            }
+          }
+
+          .second-row {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+            gap: 20px;
+          }
+
+          .section-logo-background {
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
+
+      #color {
+        .section-right {
+          padding-left: 70px;
+
+          .section-color {
+            display: grid;
+            min-width: 580px;
+            min-height: 400px;
+            grid-template-columns: auto auto;
+          }
+
+          .card-color {
+            padding: 25px;
+            position: relative;
+
+            .logo {
+              position: absolute;
+              right: 20px;
+            }
+
+            .card-section {
+              margin-bottom: 20px;
+
+              .card-title {
+                font-weight: 700;
+              }
+
+              .card-color-name {
+                font-weight: 200;
+              }
+
+              .card-color-code {
+                font-weight: 400;
+              }
+            }
+          }
+
+          #card-orange {
+            background-color: $primary-color;
+            grid-row: 1 / span 2;
+            border-radius: 16px 0 0 16px;
+
+            .card-color-name {
+              color: $color-white;
+            }
+
+          }
+
+          #card-white {
+            background-color: $color-white;
+            border-radius: 0 16px 0 0;
+
+          }
+
+          #card-black {
+            background-color: $color-black;
+            border-radius: 0 0 16px 0;
+            color: $color-white;
+          }
+        }
+      }
+
+      #social-media {
+        .button-container {
+          display: flex;
+          justify-content: center;
+          gap: 30px;
+          padding: 20px;
+        }
+
+        .section-right {
+          padding-left: 70px;
+
+          .imgage {
+            text-align: center;
+
+            .img-container {
+              img {
+                max-width: 100%;
+              }
+            }
+
+            .description {
+              font-style: italic;
+              font-weight: 400;
+              font-size: 20px;
+              margin: 24px;
+            }
+          }
+        }
+
+        #avatar {
+          img {
+            margin: 0 12px;
+          }
+        }
+
+        #phone-wallpaper {
+          p {
+            margin-bottom: 20px;
+          }
+
+          .button-container {
+            gap: 8px;
+          }
+
+          .section-phone {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 33% 33% 33%;
+
+            .logo {
+              height: 418px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+
+            #left-phone {
+              .logo {
+                background-color: $primary-color;
+                border-radius: 16px 0 0 0;
+              }
+            }
+
+            #right-phone {
+              .logo {
+                background-color: $primary-color;
+                border-radius: 0 16px 0 0;
+              }
+            }
+          }
+        }
+      }
+
+      #form {
+        .button-container {
+          display: flex;
+          justify-content: center;
+          gap: 30px;
+          padding: 20px;
+        }
+
+        .section-right {
+          padding-left: 70px;
+
+          .imgage {
+            text-align: center;
+
+            .img-container {
+              img {
+                max-width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .service-book {
+      position: fixed;
+      top: 30%;
+      right: 0%;
+      padding: 5px;
+
+      .service-card {
+        padding: 5px;
+        box-shadow: -2px 2px 2px #ddd;
+        border: 0;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        font-size: 10px;
+      }
+
+      a {
+        text-decoration: none;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        div {
+          width: "35px";
+          height: "35px";
+        }
+      }
+    }
+
+    .contact {
+      position: fixed;
+      right: 20px;
+      left: 20px;
+      bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
