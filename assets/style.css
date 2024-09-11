@@ -1,12 +1,18 @@
 @font-face {
   font-family: "Averta", sans-serif;
-  src: url("./fonts/AvertaStd-Regular.otf");
+  src: url("./fonts//Averta/AvertaStd-Regular.otf");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
+  font-family: "Averta Extra Thin", sans-serif;
+  src: url("./fonts//Averta/AvertaStd-Extrathin.otf");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
   font-family: "Averta Light", sans-serif;
-  src: url("./fonts/AvertaStd-Light.otf");
+  src: url("./fonts/Averta/AvertaStd-Light.otf");
   font-weight: 250;
   font-style: normal;
 }
@@ -17,10 +23,27 @@
   font-style: normal;
 }
 
-.lexend-deca-sans {
-  font-family: "Lexend Deca", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: normal;
+.be-vietnam-pro-extralight {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.be-vietnam-pro-regular {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.be-vietnam-pro-medium {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.be-vietnam-pro-bold {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 700;
   font-style: normal;
 }
 
@@ -88,7 +111,7 @@
 }
 * body .main {
   margin: 0 20px;
-  font-family: "Lexend Deca", sans-serif;
+  font-family: "Be Vietnam Pro", sans-serif;
 }
 * body .main .main-title {
   font-size: 24px;
@@ -331,12 +354,12 @@
   color: #f5940c;
 }
 * body .main #typography #text .section-right .section-title div {
-  font-family: "Lexend Deca", sans-serif;
+  font-family: "Be Vietnam Pro", sans-serif;
   font-size: 40px;
   font-weight: 700;
 }
 * body .main #typography #text .section-right .section-regular {
-  font-family: "Lexend Deca", sans-serif;
+  font-family: "Be Vietnam Pro", sans-serif;
 }
 * body .main #typography #text .section-right .section-regular .left {
   font-weight: 400;
@@ -346,7 +369,7 @@
   font-weight: 400;
 }
 * body .main #typography #text .section-right .section-medium {
-  font-family: "Lexend Deca", sans-serif;
+  font-family: "Be Vietnam Pro", sans-serif;
 }
 * body .main #typography #text .section-right .section-medium .left {
   font-weight: 500;
@@ -356,7 +379,7 @@
   font-weight: 500;
 }
 * body .main #typography #text .section-right .section-bold {
-  font-family: "Lexend Deca", sans-serif;
+  font-family: "Be Vietnam Pro", sans-serif;
 }
 * body .main #typography #text .section-right .section-bold .left {
   font-weight: 700;
@@ -402,10 +425,12 @@
 * body footer {
   background-color: #FFF9EB;
   padding-top: 100px;
-  font-family: "Averta Light", sans-serif;
-  font-weight: 250;
+  font-family: "Averta Extra Thin", sans-serif;
+  font-weight: 200px;
 }
 * body footer .footer-container {
+  margin: auto;
+  padding: 0 15px;
   max-width: 1200px;
   display: flex;
   flex-direction: column;
@@ -414,7 +439,6 @@
 }
 * body footer .footer-container .footer-title {
   font-size: 50px;
-  font-weight: 250;
   text-align: center;
 }
 * body footer .footer-container .footer-action {
@@ -424,7 +448,79 @@
   margin: 5px 10px;
 }
 * body footer .footer-container .footer-contact {
+  font-size: 12px;
   background-color: #131032;
+  color: #fff;
   padding: 50px 35px 25px 35px;
   border-radius: 25px 25px 0 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+* body footer .footer-container .footer-contact .footer-left {
+  width: 40%;
+}
+* body footer .footer-container .footer-contact .footer-left div {
+  margin-bottom: 40px;
+}
+* body footer .footer-container .footer-contact .footer-left .logo {
+  display: flex;
+  align-items: center;
+}
+* body footer .footer-container .footer-contact .footer-left .logo h1 {
+  font-size: 1.8rem;
+}
+* body footer .footer-container .footer-contact .footer-left address {
+  font-style: normal;
+  margin-top: 10px;
+}
+* body footer .footer-container .footer-contact .footer-left address a {
+  color: #fff;
+  text-decoration: none;
+}
+* body footer .footer-container .footer-contact .footer-left address a:hover {
+  text-decoration: underline;
+}
+* body footer .footer-container .footer-contact .footer-right {
+  width: 60%;
+  font-size: 16px;
+}
+* body footer .footer-container .footer-contact .footer-right .footer-column {
+  flex: 1;
+  padding: 0 20px;
+}
+* body footer .footer-container .footer-contact .footer-right .footer-column h2 {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+* body footer .footer-container .footer-contact .footer-right ul {
+  list-style: none;
+}
+* body footer .footer-container .footer-contact .footer-right ul li {
+  margin-bottom: 10px;
+}
+* body footer .footer-container .footer-contact .footer-right ul li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+* body footer .footer-container .footer-contact .footer-right ul li a:hover {
+  text-decoration: underline;
+}
+* body footer .footer-container .footer-contact .footer-right .footer-column:last-child {
+  font-size: 12px;
+}
+* body footer .footer-container .footer-contact .footer-right .footer-top {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+* body footer .footer-container .footer-contact .footer-right .footer-bottom {
+  padding-left: 20px;
+}
+* body footer .footer-container .footer-contact .footer-right .footer-bottom ul {
+  display: flex;
+  justify-content: flex-start;
+}
+* body footer .footer-container .footer-contact .footer-right .footer-bottom ul li {
+  margin-right: 38px;
 }/*# sourceMappingURL=style.css.map */
