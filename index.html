@@ -33,8 +33,33 @@
         <a href="https://dulichhoangnguyen.com/" class="header-button">Travel</a>
         <a href="https://gocheap.vn/blog" class="header-button">Blog</a>
       </div>
+      <button class="header-menu-button" onclick="openSidebar()">
+        <img src="./assets/icons/menu.svg" alt="download">
+      </button>
     </nav>
   </header>
+  <div class="sidebar">
+    <button class="sidebar-button" onclick="closeSidebar()">
+      <img src="./assets/icons/close.svg" alt="download">
+    </button>
+    <ul class="sidebar-menu">
+      <li class="sidebar-link">
+        <a href="https://gocheap.vn/" class="header-button">Home</a>
+      </li>
+      <li class="sidebar-link">
+        <a href="https://gocheap.vn/driverx" class="header-button">DriveX</a>
+      </li>
+      <li class="sidebar-link">
+        <a href="https://gocheap.vn/forum/" class="header-button">Forum</a>
+      </li>
+      <li class="sidebar-link">
+        <a href="https://dulichhoangnguyen.com/" class="header-button">Travel</a>
+      </li>
+      <li class="sidebar-link">
+        <a href="https://gocheap.vn/blog" class="header-button">Blog</a>
+      </li>
+    </ul>
+  </div>
 
   <div class="main">
     <section class="section-parent">
@@ -754,6 +779,40 @@
       </a>
     </div>
   </div>
+  <div class="service-book-phone">
+    <div class="service-card">
+      <a href="#">
+        <div class="logo">
+          <img src="./assets/icons/clock.svg"></i>
+        </div>
+        <span>Tài xế</span>
+      </a>
+    </div>
+    <div class="service-card">
+      <a href="#">
+        <div class="logo">
+          <img src="./assets/icons/location.svg"></i>
+        </div>
+        <span>Sân bay</span>
+      </a>
+    </div>
+    <div class="service-card">
+      <a href="#">
+        <div class="logo">
+          <img src="./assets/icons/plane.svg"></i>
+        </div>
+        <span>Xe ghép</span>
+      </a>
+    </div>
+    <div class="service-card">
+      <a href="#">
+        <div class="logo">
+          <img src="./assets/icons/phone.svg"></i>
+        </div>
+        <span>Hotline</span>
+      </a>
+    </div>
+  </div>
   <div class="contact">
     <div class="messenger">
       <a href="#">
@@ -766,6 +825,8 @@
       </a>
     </div>
   </div>
+
+  <script src="main.js"></script>
 </body>
 
 </html>
