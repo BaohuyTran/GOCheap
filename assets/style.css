@@ -140,13 +140,10 @@
   margin-bottom: 16px;
 }
 * body .main .section-parent .section-children .section-left .children-description {
-  font-weight: 300px;
   font-size: 16px;
 }
 * body .main .section-parent .section-children .section-right {
   width: 60%;
-}
-* body .main #logo .section-right {
   padding-left: 70px;
 }
 * body .main #logo .section-right .imgage {
@@ -174,9 +171,6 @@
 }
 * body .main #logo .section-right .section-logo-background img {
   width: 100%;
-}
-* body .main #color .section-right {
-  padding-left: 70px;
 }
 * body .main #color .section-right .section-color {
   display: grid;
@@ -227,9 +221,6 @@
   gap: 30px;
   padding: 20px;
 }
-* body .main #social-media .section-right {
-  padding-left: 70px;
-}
 * body .main #social-media .section-right .imgage {
   text-align: center;
 }
@@ -279,17 +270,11 @@
   gap: 30px;
   padding: 20px;
 }
-* body .main #form .section-right {
-  padding-left: 70px;
-}
 * body .main #form .section-right .imgage {
   text-align: center;
 }
 * body .main #form .section-right .imgage .img-container img {
   max-width: 100%;
-}
-* body .main #typography #header .section-right {
-  padding-left: 70px;
 }
 * body .main #typography #header .section-right section {
   margin-bottom: 34px;
@@ -337,9 +322,6 @@
 }
 * body .main #typography #header .section-right .section-bold .right {
   font-weight: 700;
-}
-* body .main #typography #text .section-right {
-  padding-left: 70px;
 }
 * body .main #typography #text .section-right section {
   margin-bottom: 34px;
@@ -426,7 +408,7 @@
   background-color: #FFF9EB;
   padding-top: 100px;
   font-family: "Averta Extra Thin", sans-serif;
-  font-weight: 200px;
+  font-weight: 200;
 }
 * body footer .footer-container {
   margin: auto;
@@ -523,4 +505,31 @@
 }
 * body footer .footer-container .footer-contact .footer-right .footer-bottom ul li {
   margin-right: 38px;
+}
+@media only screen and (max-width: 1200px) {
+  * body .main .section-parent {
+    margin: 0 auto;
+  }
+  * body .main .section-parent .section-children {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+  }
+  * body .main .section-parent .section-children .section-left {
+    width: 100%;
+  }
+  * body .main .section-parent .section-children .section-right {
+    width: 100%;
+    padding-left: 0;
+  }
+  * body footer .footer-container .footer-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  * body footer .footer-container .footer-contact .footer-left,
+  * body footer .footer-container .footer-contact .footer-right {
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */
